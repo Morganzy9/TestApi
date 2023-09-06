@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SDWebImage
 
 class APIManager {
     
@@ -16,22 +17,11 @@ class APIManager {
     private let apiKey = "08aaad3488c7489fa416f8e726d49df7"
     private let baseURL = "https://api.spoonacular.com/recipes/random"
     
-    func fetchRecipes(numberOfRecipes: Int, completion: @escaping (CookData?, Error?) -> Void) {
-        fetchRandomRecipes(numberOfRecipes: numberOfRecipes) { result in
-            switch result {
-            case .success(let cookData):
-                completion(cookData, nil)     
-            case .failure(let error):
-                print("Error: \(error.localizedDescription)")
-                completion(nil, error)
-            }
-        }
-    }
-    
-    private func fetchRandomRecipes(numberOfRecipes: Int, completion: @escaping (Result<CookData, Error>) -> Void) {
+    func fetchRandomRecipes(numberOfRecipes: Int, completion: @escaping (Result<CookData, Error>) -> Void) {
         let queryString = "number=\(numberOfRecipes)&apiKey=\(apiKey)"
         let fullURLString = baseURL + "?" + queryString
         guard let url = URL(string: fullURLString) else { return }
+        print(url)
         
         let task = URLSession.shared.dataTask(with: url) { data, response, fetchError in
             if let fetchError = fetchError {
@@ -47,5 +37,21 @@ class APIManager {
             }
         }
         task.resume()
+    }
+    
+    func fetchRecipeImage(id: Int, completion: @escaping (UIImage?) -> Void) {
+        
+        let imageUrlString = "https://spoonacular.com/recipeImages/\(id)-636x393.jpg"
+        
+        guard let imageUrl = URL(string: imageUrlString) else {
+            completion(nil)
+            return
+        }
+        
+        
+        
+        SDWebImageDownloader.shared.downloadImage(with: imageUrl) { (image, _, _, _) in
+            completion(image)
+        }
     }
 }

@@ -16,6 +16,7 @@
 		161A4B772AA628760021877F /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161A4B712AA628760021877F /* UIViewController+Utils.swift */; };
 		161A4B782AA628760021877F /* UIStack + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161A4B722AA628760021877F /* UIStack + Extension.swift */; };
 		161A4B792AA628760021877F /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161A4B732AA628760021877F /* Theme.swift */; };
+		161A4B7F2AA778BB0021877F /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161A4B7E2AA778BB0021877F /* File.swift */; };
 		1695648E2AA385AD00A9F79C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1695648D2AA385AD00A9F79C /* AppDelegate.swift */; };
 		169564902AA385AD00A9F79C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1695648F2AA385AD00A9F79C /* SceneDelegate.swift */; };
 		169564922AA385AD00A9F79C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169564912AA385AD00A9F79C /* ViewController.swift */; };
@@ -37,6 +38,7 @@
 		161A4B712AA628760021877F /* UIViewController+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewController+Utils.swift"; path = "TestApi/Constant/UIViewController+Utils.swift"; sourceTree = SOURCE_ROOT; };
 		161A4B722AA628760021877F /* UIStack + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIStack + Extension.swift"; path = "TestApi/Constant/UIStack + Extension.swift"; sourceTree = SOURCE_ROOT; };
 		161A4B732AA628760021877F /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Theme.swift; path = TestApi/Constant/Theme.swift; sourceTree = SOURCE_ROOT; };
+		161A4B7E2AA778BB0021877F /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		1695648A2AA385AD00A9F79C /* TestApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1695648D2AA385AD00A9F79C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1695648F2AA385AD00A9F79C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				169564912AA385AD00A9F79C /* ViewController.swift */,
 				169564932AA385AD00A9F79C /* Main.storyboard */,
 				169564982AA385AF00A9F79C /* LaunchScreen.storyboard */,
+				161A4B7E2AA778BB0021877F /* File.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 				16C5B6802AA4855500E861DC /* ApiManager.swift in Sources */,
 				161A4B772AA628760021877F /* UIViewController+Utils.swift in Sources */,
 				169564A22AA385C400A9F79C /* CookData.swift in Sources */,
+				161A4B7F2AA778BB0021877F /* File.swift in Sources */,
 				161A4B782AA628760021877F /* UIStack + Extension.swift in Sources */,
 				161A4B6D2AA6285D0021877F /* SeeAllTrendingCell.swift in Sources */,
 				161A4B752AA628760021877F /* UILabel+Extension.swift in Sources */,
